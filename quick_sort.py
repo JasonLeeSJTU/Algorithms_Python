@@ -54,6 +54,6 @@ def partition(data, left, right):
     return j
 
 if __name__ == '__main__':
-    data = [1]
+    data = [3,4,1,2,4,5,6]
     quick_sort(data)
     print(data)

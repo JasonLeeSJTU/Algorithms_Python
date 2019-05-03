@@ -24,7 +24,7 @@ class Solution:
         if not s:
             return False
 
-        pattern = re.compile(r'^[+-]?[0-9]*(\.[0-9]+)?([eE][+-]?[0-9]+)?$')
+        pattern = re.compile(r'^[+-]?[0-9]*(\.[0-9]*)?([eE][+-]?[0-9]+)?$')
         # ^[+-]?                starts with + or -
         # [0-9]*                match .2 for example
         # (\.[0-9]+)?           match float number
@@ -39,5 +39,5 @@ class Solution:
 
 if __name__ == '__main__':
     res = Solution()
-    a = res.isNumeric('.45e3')
+    a = res.isNumeric('.e3')
     print(a)
